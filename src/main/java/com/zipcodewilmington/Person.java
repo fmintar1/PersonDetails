@@ -1,4 +1,5 @@
 package com.zipcodewilmington;
+import com.zipcodewilmington.PersonHandler.*;
 
 /**
  * Created by leon on 1/24/18.
@@ -6,6 +7,7 @@ package com.zipcodewilmington;
 public class Person {
     private final String firstName;
     private final String lastName;
+    public static int i;
 
     public Person(String firstName, String lastName) {
         this.firstName = firstName;
@@ -13,6 +15,7 @@ public class Person {
     }
 
     // why is this called a GETTER??
+    // to get the variable that was set by Person constructor
     public String getFirstName() {
         return firstName;
     }
